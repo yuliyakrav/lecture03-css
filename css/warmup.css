@@ -2,3 +2,39 @@
    Do not modify the HTML, no matter how much you want to!
 */
 
+circle {
+    fill: #5f5f5f;
+}
+
+path {
+    stroke: #5f5f5f;
+    stroke-width: 8px;
+}
+
+.small {
+    fill: white;
+}
+
+.small.contained {
+    fill: #573d29;
+}
+
+.group circle, .same {     /* space means circle is inside the group class, group in another element*/
+    fill: #c0c0c0;      /* comma will make rules apply to all those classes */  
+    stroke: none; 
+}
+
+#unique {
+    fill: #c0c0c0;
+    stroke: #bd250d;
+    stroke-width: 4px;
+}
+
+#unique:hover {
+    fill: #bd250d;
+}
+
+svg > circle::last-child {  /* > means directly inside svg tag */
+    fill: black;
+}
+
