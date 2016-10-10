@@ -67,20 +67,24 @@ section {
   padding-right: 2em;
 }
 
+.sidebar-container {
+  position: relative;
+}
+
 /* breaking flow (float, but there are better ways to achieve this! */
 nav {
-  float: right;
-  width: 25%;
+  position: absolute;
+  right: 0;
+  width: 230px;
   padding: 1em;
   padding-top: 0;
   background-color: #F2EBDD;
-  border: 1em solid white;
   /*border-radius: 2em;*/
-  /*box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);  */
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);  
 }
 
 main {
-  width: 75%;
+  width: 720px;
 }
 
 /* box model applied to footer */
